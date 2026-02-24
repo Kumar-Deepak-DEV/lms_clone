@@ -3,26 +3,28 @@ export const loginCredentials = {
     password:'12345'
 };
 
-export const loginDetails = (uiid,password)=>{
-    if(uiid == loginCredentials['uid'] && password == loginCredentials.password){
-        const user = {
-            role:'Student',
-            name:'Student User',
-            uiid,
-        }
-    
-        
-        localStorage.setItem("user",JSON.stringify(user));
-        return true;
-        
-    };
-
-    return false;
-
-    
-}
-
-
+export const leave =[
+   {
+    number:0,
+    txt: "Total Application",
+    color:"white"
+  }, 
+   {
+    number:0,
+    txt: "Pending Review",
+    color:"amber-500"
+  },
+   {
+    number:0,
+    txt: "Approved",
+    color:'sky-500'
+  },
+   {
+    number:0,
+    txt: "Rejected",
+    color:"green-500"
+  }
+]
 
 export const students = [
   {
@@ -35,15 +37,24 @@ export const students = [
 
     image: "https://avatars.githubusercontent.com/u/225372697?v=4",
 
-    attendance: {
+    attendance: [{
+      
+      semester: "Semester 1",
+      total: 271,
+      present: 251,
+      bonus: 0,
+      percentLabel: 80,
+      startDate: "05/08/2025",
+      endDate: "28/01/2026",
+    },{
       semester: "Semester 2",
-      present: 126,
-      total: 146,
-      bonus: 2,
-      percentLabel: 88,
+      present: 208,
+      total: 208,
+      bonus: 0,
+      percentLabel: 100,
       startDate: "29/01/2026",
       endDate: "30/06/2026",
-    },
+    }],
 
     subjects: [
       "SU11 - GIT & GITHUB",
@@ -74,14 +85,14 @@ export const students = [
     events: [],
   },
 ];
-// export const loginDetails = (uid, password) => {
-//   const student = students.find(
-//     (s) => s.uid === uid && s.password === password,
-//   );
+export const loginDetails = (uid, password) => {
+  const student = students.find(
+    (s) => s.uid === uid && s.password === password,
+  );
 
-//   if (!student) return false;
+  if (!student) return false;
 
-//   localStorage.setItem("user", JSON.stringify(student));
+  localStorage.setItem("user", JSON.stringify(student));
 
-//   return true;
-// };
+  return true;
+};
