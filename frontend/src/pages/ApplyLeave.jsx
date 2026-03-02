@@ -152,7 +152,32 @@ const ApplyLeave = () => {
 
                     {/* Request List */}
 
-                    
+                    <div className=" bg-neutral-900 border border-neutral-800 rounded-lg p-6">
+                        <div className="flex items-center gap-3 mb-6">
+                            <div className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center">
+                                <User className="w-4 h-4 text-neutral-400" />
+                            </div>
+
+                            <div>
+                                <h2 className="text-xl font-semibold">My Leave Requests</h2>
+                                <p className="text-sm text-neutral-400">
+                                    Track the status of your applications
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* EMPTY STATE */}
+                        <div className="text-center py-12">
+                            <FileText className="w-12 h-12 text-neutral-600 mx-auto mb-4" />
+
+                            <div className=" text-neutral-400">No leave requests yet</div>
+
+                            <div className="text-sm text-neutral-500 mt-1">
+                                Your submitted applications will appear here
+                            </div>
+                        </div>
+
+                    </div >
 
                 </div >
             </div >
