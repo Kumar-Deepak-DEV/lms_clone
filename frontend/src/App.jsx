@@ -1,5 +1,5 @@
 import Landing from './components/Landing.jsx'
-import Form from './components/Form.jsx'
+import Login from './components/Login.jsx'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 
@@ -11,7 +11,7 @@ function App() {
       {/* <Login /> */}
       <Routes>
           <Route path='/' element={<Landing/>}/>
-          <Route path='/form' element={<Form/>}/>
+          <Route path='/form' element={<Login/>}/>
       </Routes>
 
     </>

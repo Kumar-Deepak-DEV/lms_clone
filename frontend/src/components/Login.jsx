@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Form() {
+export default function Login() {
     return (
         <div className='h-screen w-full bg-black text-white py-40'>
             <div className="m-auto border border-white/20  w-120 p-5 rounded-2xl text-center">
