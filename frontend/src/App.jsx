@@ -1,14 +1,18 @@
-import Login from './components/login.jsx'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Landing from './components/Landing.jsx'
+import Form from './components/Form.jsx'
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
 
-      <Login/>
+      {/* <Login /> */}
+      <Routes>
+          <Route path='/' element={<Landing/>}/>
+          <Route path='/form' element={<Form/>}/>
+      </Routes>
 
     </>
   )
