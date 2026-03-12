@@ -1,8 +1,8 @@
-import Landing from './components/Landing.jsx'
-import Login from './components/Login.jsx'
+import Landing from './page/Landing.jsx'
+import Login from './page/Login.jsx'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import StudentDash from './components/StudentDash.jsx'
+import StudentDash from './page/StudentDash.jsx'
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
       <Routes>
           <Route path='/' element={<Landing/>}/>
           <Route path='/form' element={<Login/>}/>
-          <Route path='/dashboard' element={<StudentDash/>}/>
+          <Route path='/student' element={<StudentDash/>}/>
       </Routes>
 
     </>

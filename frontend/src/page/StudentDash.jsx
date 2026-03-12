@@ -15,7 +15,7 @@ export default function StudentDash() {
 
     }
     return (
-        <div className="min-h-screen bg-black text-white p-10">
+        <div className="min-h-screen p-10">
             <h1 className="text-3x1 font-bold">Student Dashboard</h1>
 
             <div className="mt-6 space-y-2">
