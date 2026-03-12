@@ -11,11 +11,11 @@ export default function Landing() {
             <button onClick={()=>navigate("/form")} className='block bg-white rounded-md w-20 m-auto mb-5 p-1 text-center font-semibold cursor-pointer'>Login
             </button>
             <div className='flex m-auto justify-center  gap-4 p-3'> 
-                <div className='text-white bg-black rounded-xl border-2 border-white p-4 w-100'>
+                <div className='text-white bg-white/10 rounded-xl border border-white/20 p-4 w-100'>
                     <h3 className=''>Role-based dashboards</h3>
                     <p>Admin, Mentor, and Student experiences tailored to their needs.</p>
                 </div>
-                <div className='text-white bg-black rounded-2xl border-2 border-white p-4 w-100'>
+                <div className='text-white  bg-white/10 rounded-2xl border border-white/20 p-4 w-100'>
                     <h3 className=''>Fast and secure access</h3>
                     <p>Encrypted sessions and streamlined navigation.</p>
                 </div>
